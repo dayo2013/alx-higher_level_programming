@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""Module 0"""
+"""
+Contains the read_file function
+"""
 
 
 def read_file(filename=""):
-    """Read a file"""
-    with open(filename, mode="r", encoding="utf-8") as myfile:
-        print(myfile.read(), end="")
+    """""reads a text file(UTF8) and prints it to stdout"""
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
 
